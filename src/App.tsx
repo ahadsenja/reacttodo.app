@@ -2,13 +2,20 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
+  const [newItem, setNewItem] = useState("");
   return (
     <>
       <h1>Todo App</h1>
       <form action="">
         <div className="form-group">
           <label htmlFor="todo">Add Todo</label>
-          <input className="form-control" type="text" id="todo" />
+          <input
+            className="form-control"
+            type="text"
+            id="todo"
+            value={newItem}
+            onChange={(e) => setNewItem(e.target.value)}
+          />
         </div>
         <button type="submit" className="btn">
           Submit
