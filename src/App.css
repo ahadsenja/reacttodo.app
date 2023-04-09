@@ -79,8 +79,18 @@ ul {
 
 ul input {
   margin-right: 1rem;
+  cursor: pointer;
 }
 
 ul label {
   margin-right: 2rem;
+  font-size: 18px;
+}
+
+ul .btn-danger {
+  border: 1px solid ghostwhite;
+}
+
+ul .btn-danger:hover {
+  border: 1px solid red;
 }
